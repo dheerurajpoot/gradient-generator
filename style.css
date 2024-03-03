@@ -20,7 +20,7 @@ header{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .header-logo a{
-    font-size: 1.1rem;
+    font-size: .8rem;
     text-decoration: none;
     font-weight: 800;
     color: white;
@@ -100,17 +100,50 @@ header{
 }
 footer{
     height: 1rem;
-    position: absolute;
+    /* position: absolute; */
     color: white;
     bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items:center;
-    right: 45%;  
+    width: 100%;
+    bottom: 1rem;
+    position: fixed;
+    /* right: 45%;   */
 }
 footer a{
     color: white;
     text-decoration: none;
     font-style: italic;
     font-weight: bold;
+}
+@media only screen and (max-width: 800px) and (min-width: 350px){
+    header{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+    }
+    .header-menu{
+        display: none;
+    }
+    .header-logo a{
+        font-size: .6rem;
+    }
+    .main-container{
+        padding-top: 5rem;
+    }
+    .main-container h2{
+        font-size: 1.1rem;
+    }
+    .main-container h3{
+        font-size: .8rem;
+    }
+    .buttons{
+        gap: 1.5rem;
+    }
+    .gradient-code{
+        width: 18rem;
+    }
 }
